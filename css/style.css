@@ -2,6 +2,7 @@
   --bg-color: #222;
   --main-color: #ff6347;
   --font-color: #efefef;
+  --headerbar-height: 4rem;
 }
 
 body {
@@ -23,6 +24,7 @@ ul {
   list-style-type: none;
 }
 
+/* header bar */
 .header-bar,
 .header-bar ul {
   display: flex;
@@ -31,17 +33,18 @@ ul {
 .header-bar {
   position: relative;
   background-color: #dedede;
-  height: 5rem;
+  height: var(--headerbar-height);
   justify-content: space-between;
   z-index: 80;
+  box-sizing: border-box;
 }
 
 .header-image {
   position: relative;
   z-index: 80;
   background-color: black;
-  height: 5rem;
-  padding: 15px 15px 10px 20px;
+  height: var(--headerbar-height);
+  padding: 10px 15px 10px 20px;
   box-sizing: border-box;
 }
 
@@ -51,7 +54,7 @@ ul {
 }
 
 .header-nav {
-  padding: 0.4rem;
+  padding: 0;
   font-size: 1.2rem;
   margin-right: 6rem;
 }
@@ -63,6 +66,56 @@ ul {
   text-transform: uppercase;
 }
 
+/* header bar end */
+
+/* main */
+.intro {
+  width: 100%;
+  height: auto;
+  background-color: blanchedalmond;
+  position: relative;
+}
+
+.intro-img {
+  width: inherit;
+}
+
+.intro-title {
+  color: #ddd;
+  text-align: center;
+  background-color: #00000066;
+  position: absolute;
+  width: 100%;
+  bottom: 20%;
+  font-size: 1.1rem;
+}
+
+.content {
+  background-color: khaki;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+#about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.about-me-img {
+  background-color: lawngreen;
+}
+
+.about-me-text {
+  background-color: lightslategray;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+
+
+/* media section */
 @media (max-width: 840px) {
   .normal-menu {
     display: none;
@@ -82,7 +135,7 @@ ul {
 
   .header-list ul a {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 10px 0;
   }
 
