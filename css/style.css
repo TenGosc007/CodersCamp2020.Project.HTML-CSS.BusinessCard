@@ -148,6 +148,34 @@ ul {
   margin: auto;
 }
 
+/* portfolio */
+.portfolio-content {
+  padding: 40px 20px;
+  color: var(--font-color);
+  background-color: #ffffff33;
+}
+
+#instafeed-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+#instafeed-container>a {
+  display: block;
+  width: 20vw;
+  height: 20vw;
+  max-width: 250px;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+#instafeed-container img {
+  width: 100%;
+}
+
 
 /* contact */
 .contact-form form {
@@ -167,6 +195,10 @@ ul {
   border-radius: 0.2rem;
   padding: 5px 10px;
   font-size: 1rem;
+}
+
+.form-formule {
+  font-size: 0.8rem;
 }
 
 .checkbox {
@@ -286,6 +318,10 @@ ul {
   .intro-title {
     font-size: 0.8rem;
     padding: 0;
+  }
+
+  .container {
+    padding: 0.5rem;
   }
 
   #about-me {

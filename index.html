@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/bbf3eee0ec.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
@@ -26,7 +27,6 @@
     <div class="loader">
       <div class="spin">Loading...</div>
     </div>
-
     <header id="topHeader">
       <div class="header-bar">
         <div class="header-image">
@@ -70,7 +70,6 @@
         </div>
       </div>
     </header>
-
     <div class="container">
       <main>
         <div class="content">
@@ -139,11 +138,14 @@
               </p>
             </div>
           </article>
-          <article id="portfolio">
-            <div class="portfolio-content">
-              <h2>Portfolio</h2>
-            </div>
-          </article>
+        </div>
+        <article id="portfolio">
+          <div class="portfolio-content">
+            <h2>Portfolio</h2>
+            <div id="instafeed-container"></div>
+          </div>
+        </article>
+        <div class="content">
           <article id="contact">
             <div class="contact-text">
               <h2>Kontakt</h2>
@@ -161,18 +163,18 @@
                   <input type="text" name="subject" id="subject" />
                   <label for="message">Treść wiadomości</label>
                   <textarea name="message" id="message" rows="10"></textarea>
-
                   <div class="checkbox">
                     <input type="checkbox" name="agreement" id="agreement" />
                     <label for="agreement">
-                      Korzystając z formularza zgadzasz się na przechowywanie i
-                      przetwarzanie twoich danych przez tę witrynę.
+                      <span class="form-formule">
+                        Korzystając z formularza zgadzasz się na przechowywanie
+                        i przetwarzanie twoich danych przez tę witrynę.
+                      </span>
                     </label>
                   </div>
                   <button class="contact-btn">Wyślij</button>
                 </form>
               </div>
-
               <div class="socialmedia">
                 <i class="fab fa-facebook-square"></i>
                 <i class="fab fa-instagram-square"></i>
@@ -181,16 +183,14 @@
             </div>
           </article>
         </div>
-
         <button id="toTopBtn"><i class="fas fa-arrow-circle-up"></i></button>
       </main>
     </div>
-
     <footer id="footer">
       <span class="footer-text">2020 &copy; Aleksander Atamańczuk</span>
     </footer>
-
     <script type="text/javascript" src="js/loading.js"></script>
     <script type="text/javascript" src="js/scroll_back.js"></script>
+    <script type="text/javascript" src="js/instagram_feed.js"></script>
   </body>
 </html>
