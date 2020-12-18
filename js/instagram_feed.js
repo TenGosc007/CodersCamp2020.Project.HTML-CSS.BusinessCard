@@ -8,3 +8,14 @@ const userFeed = new Instafeed({
 });
 
 userFeed.run();
+
+const img = document.querySelector("#instafeed-container");
+
+function clickHandler(e) {
+  e.preventDefault();
+  console.log("test");
+}
+
+console.log(img);
+
+// img.forEach((elem) => elem.addEventListener("click", clickHandler));

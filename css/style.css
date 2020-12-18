@@ -119,6 +119,12 @@ ul {
   padding: 40px 20px;
 }
 
+.section-header {
+  text-transform: capitalize;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid #bcbcbc;
+}
+
 /* about me */
 #about-me {
   display: grid;
@@ -141,12 +147,16 @@ ul {
   padding: 0 10px;
 }
 
+/* about me end */
+
 /* offer */
 .offer-text {
   text-align: justify;
   max-width: 800px;
   margin: auto;
 }
+
+/* offer end */
 
 /* portfolio */
 .portfolio-content {
@@ -174,10 +184,23 @@ ul {
 
 #instafeed-container img {
   width: 100%;
+  transition: all 0.4s ease-in-out;
 }
+
+#instafeed-container img:hover {
+  transform: scale(1.1);
+  filter: grayscale(90%) brightness(0.7) blur(1px);
+}
+
+/* portfolio end */
 
 
 /* contact */
+.contact-text {
+  max-width: 600px;
+  margin: auto;
+}
+
 .contact-form form {
   display: flex;
   flex-direction: column;
@@ -225,6 +248,10 @@ ul {
   padding-top: 1rem;
 }
 
+.socialmedia a {
+  color: var(--bg-color);
+}
+
 .socialmedia .fa-facebook-square,
 .socialmedia .fa-instagram-square,
 .socialmedia .fa-youtube-square {
@@ -243,6 +270,10 @@ ul {
 .socialmedia .fa-youtube-square:hover {
   color: #c4302b;
 }
+
+/* contact end */
+
+/* main end  */
 
 /* back to top button */
 #toTopBtn {
@@ -273,6 +304,8 @@ ul {
   top: 0;
   left: 0;
 }
+
+/* back to top button end  */
 
 /* footer section */
 #footer {
@@ -330,6 +363,15 @@ ul {
 
   .about-me-text {
     order: -1;
+  }
+
+  #instafeed-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #instafeed-container>a {
+    width: 40vw;
+    height: 40vw;
   }
 }
 
