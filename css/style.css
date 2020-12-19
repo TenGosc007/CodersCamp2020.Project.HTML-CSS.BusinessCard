@@ -189,7 +189,33 @@ ul {
 
 #instafeed-container img:hover {
   transform: scale(1.1);
-  filter: grayscale(90%) brightness(0.7) blur(1px);
+  filter: brightness(.8);
+}
+
+#fullSize {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 98;
+  background-color: #00000099;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-size-img {
+  width: auto;
+  max-height: 90%;
+}
+
+.full-size-close {
+  font-size: 3rem;
+  position: absolute;
+  top: 10px;
+  right: 80px;
 }
 
 /* portfolio end */
@@ -372,6 +398,10 @@ ul {
   #instafeed-container>a {
     width: 40vw;
     height: 40vw;
+  }
+
+  .full-size-img {
+    max-width: 80%;
   }
 }
 

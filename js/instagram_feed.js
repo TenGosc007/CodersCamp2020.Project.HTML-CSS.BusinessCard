@@ -9,13 +9,34 @@ const userFeed = new Instafeed({
 
 userFeed.run();
 
+// Gallery
 const img = document.querySelector("#instafeed-container");
+const closeBtn = document.querySelector("#fullSize");
+let imgDiv;
 
 function clickHandler(e) {
   e.preventDefault();
-  console.log("test");
+  if (e.target.tagName === "IMG") {
+    console.log(e.target.src);
+
+    imgDiv = document.querySelector("#fullSize");
+    imgDiv.style.display = "flex";
+    imgDiv.innerHTML = `<img src="${e.target.src}" alt="Image" class="full-size-img" />`;
+
+    const closeDiv = document.createElement("div");
+    closeDiv.classList.add("full-size-close");
+    closeDiv.innerHTML = '<i class="fas fa-times"></i>';
+    imgDiv.appendChild(closeDiv);
+  }
 }
 
-console.log(img);
+function closeHandler(e) {
+  if (e.target.tagName !== "IMG") {
+    imgDiv.style.display = "none";
+  }
 
-// img.forEach((elem) => elem.addEventListener("click", clickHandler));
+  console.log(e.target);
+}
+
+img.addEventListener("click", clickHandler);
+closeBtn.addEventListener("click", closeHandler);
