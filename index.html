@@ -12,7 +12,6 @@
       src="https://kit.fontawesome.com/bbf3eee0ec.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
@@ -20,13 +19,9 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/loading.css" />
   </head>
 
   <body>
-    <div class="loader">
-      <div class="spin">Loading...</div>
-    </div>
     <header id="topHeader">
       <div class="header-bar">
         <div class="header-image">
@@ -83,66 +78,175 @@
             </div>
             <div class="about-me-text">
               <h2 class="section-header">Kim jestem</h2>
+              <p>Cześć, dzień dobry &#128516;</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                dolorem beatae fugit vel voluptatem deserunt odio ratione modi
-                eaque libero! Et impedit eius, id illo illum repellendus at
-                incidunt! Maxime ex saepe quae quibusdam assumenda! Dicta autem
-                cupiditate suscipit exercitationem. Magnam alias dolore animi
-                perspiciatis amet natus non in possimus facere, aspernatur rerum
-                et impedit numquam voluptas soluta, eveniet est omnis cupiditate
-                nemo libero maiores. Quae totam excepturi, ut dignissimos, magni
-                asperiores, illum eligendi enim porro quam similique voluptatem
-                quia fuga tempora accusantium. Porro doloribus iusto modi non
-                accusamus officia laborum, iste, sapiente impedit nulla unde
-                tenetur. Laudantium, aliquam repellat aspernatur sint amet rerum
-                ab labore repellendus atque maiores? Consequatur repellat
-                officiis fuga blanditiis, nostrum laudantium. Quia dolores ipsum
-                iure unde. Explicabo dolor, alias animi distinctio pariatur
-                corporis nam non beatae quidem officia, tempore voluptatibus
-                voluptates officiis exercitationem vitae? Culpa, impedit
-                perspiciatis! Maxime aut sunt qui quia harum, aspernatur
-                voluptatum! Quod at, sit maiores quam impedit eius totam harum
-                perspiciatis porro eum numquam quasi magnam labore omnis
-                quibusdam ad doloremque vero enim quo quis? Voluptas totam,
-                voluptatibus modi ipsa perspiciatis dolores, impedit minima,
-                magnam facilis quos sapiente temporibus reiciendis consequatur
-                veritatis pariatur suscipit officiis. Quae nam magnam ut
-                aspernatur placeat.
+                Mam na imię Aleksander i cieszę się, że trafiliście na moją
+                stronę! Fotografią zajmuję się hobbistycznie w przerwach
+                pomiędzy zaliczeniami na studiach na Politechnice Wrocławskiej.
               </p>
+              W zdjęciach cenię przede wszystkim naturalność i prawdziwość.
+              Uwielbiam zabawę ze światłem &#128522; Specjalizuję się w
+              fotografii portretowej. Bliskie są mi również sesje
+              okolicznościowe i produktowe. Mieszkam we Wrocławiu, ale
+              fotografuję wszędzie tam, gdzie mnie poniesie &#128516;
             </div>
           </article>
           <article id="offer">
             <div class="offer-text">
               <h2 class="section-header">Oferta</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                consequuntur rerum dolorem neque eaque assumenda modi. Non
-                reprehenderit quo, laborum officiis ipsum cupiditate vero
-                maiores suscipit, fuga earum similique aspernatur alias
-                assumenda? Perspiciatis, pariatur! Eveniet molestiae libero
-                dicta assumenda laudantium nulla minus eligendi iure repellat,
-                quaerat eos consequuntur neque. Rerum fuga nisi, at molestias
-                quidem iste, quia dignissimos soluta ducimus dolores id
-                necessitatibus consequuntur nihil? Laboriosam quibusdam neque
-                possimus unde maxime placeat, obcaecati provident harum
-                accusamus magnam earum pariatur minus corrupti inventore beatae
-                quae aliquam itaque voluptatum totam laborum. Esse distinctio
-                similique quibusdam ratione vero asperiores quam quidem tempore,
-                molestiae hic debitis quasi incidunt. Soluta eum error sed unde
-                esse alias blanditiis eius eligendi? Vel, quam? Exercitationem,
-                temporibus. Ex voluptate blanditiis dolor mollitia esse quaerat
-                tenetur natus dolore consectetur eveniet laboriosam repellendus
-                animi, veniam, laborum expedita cumque quia atque eaque sapiente
-                unde quam ducimus minus! Quod eos eveniet excepturi quaerat!
-              </p>
+              <div class="offer-container">
+                <div class="offer-box">
+                  <h4>Portrety</h4>
+                  <p>
+                    Zdjęcia portretowe w plenerze lub w studio. Z przeznaczeniem
+                    na własną stronę internetową, portale społecznościowe lub po
+                    prostu na własną pamiątkę.
+                  </p>
+                </div>
+                <div class="offer-box">
+                  <h4>Sesje Produktowe</h4>
+                  <p>
+                    Profesjonalne zdjęcia produktowe, przeznaczone do
+                    umieszczenia na serwisach aukcyjnych. Fotografie tworzone z
+                    pełnym zaangażowaniem w doskonałej, najwyższej jakości.
+                  </p>
+                </div>
+                <div class="offer-box">
+                  <h4>Uroczystości</h4>
+                  <p>
+                    Studniówki, chrzty, imprezy firmowe i wiele innych. Wszystko
+                    co ważne przemija bezpowrotnie. Warto zatrzymać te chwile na
+                    zdjęciach.
+                  </p>
+                </div>
+              </div>
             </div>
           </article>
         </div>
         <article id="portfolio">
           <div class="portfolio-content">
             <h2 class="section-header">Portfolio</h2>
-            <div id="instafeed-container"></div>
+            <div id="gallery-container">
+              <a target="_blank" href="https://www.instagram.com/p/CHvCtafgEGO/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/126101500_850655315762511_6741352691291962856_n.jpg?_nc_cat=102&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=HUJt9wRdyA0AX-Frdtp&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=eb73f53d32807afddd573e4b83c4c7ce&amp;oe=6008801F" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CHVMq39APGs/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/123786536_2916136738614821_6232429887082170941_n.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=1I3zn2nzab4AX_CDDRA&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=9664fed2aebb54a3ccda73a88405a781&amp;oe=6006ADAB" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CHP81dQAxVq/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/123595870_782736528957930_4881813508260548620_n.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=oQZob6guHwcAX9TieOH&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=228bd1991aa4f25a745437f04e26e250&amp;oe=600971B0" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CGwhtUegf2d/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/122484673_789889831582531_6632774034298886052_n.jpg?_nc_cat=108&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=FnPGq4FtoYIAX867JoR&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=b0141e624000c79013e62d6b3528e003&amp;oe=6007CAC8" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CGIJd3pg5Dh/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/121022795_2778045839138666_6074513076690348004_n.jpg?_nc_cat=102&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=h3qbGePftOYAX9zjR4r&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=2060c25d34751c32fe810a4b07eb2a88&amp;oe=6007E8E4" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CGFTpLlgFG_/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/120819116_993756644468158_2195254590138887013_n.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=5vppFmedEJgAX_4mxQY&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=d448ea870cbd222a7f3995714fee0c18&amp;oe=60075B3A" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CF95BiTA9_c/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/120793953_634081690588483_1335663587256061739_n.jpg?_nc_cat=111&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=0iV-HweLdOMAX8FqIUA&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=fae0bc5df87c40f3eeb9d68b62d2761a&amp;oe=60078C72" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CF7L9ORgxMT/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/120657179_182622916822593_466834697424529751_n.jpg?_nc_cat=108&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=2ZCD3qEkhR0AX8kqbTo&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=18d2ebe77555ab1eb39399fcda67c119&amp;oe=60086015" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CF4plgvAkzj/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/120480816_788371051994068_2248417757175914720_n.jpg?_nc_cat=106&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=eDEEc_R6Z5oAX9jnHoo&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=8d269066209a71e43187855cd887ce57&amp;oe=60098637" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CF2XSH3Av2G/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/120530888_590220141819467_1565251932469454060_n.jpg?_nc_cat=104&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=qvTgdNyJuuUAX8WquGV&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=4a4a631b500f920acfaff6168b47cbd6&amp;oe=6006B864" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CFXTpyDgPoQ/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/119810979_1074178306331312_4115130014202685348_n.jpg?_nc_cat=102&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=n2r1W29BsJwAX8IuANH&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=f468a5f3564d4c759544f7a687d2175b&amp;oe=6008E894" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CFSP1q3ATpg/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/119645574_178284730428496_2399779230792123696_n.jpg?_nc_cat=111&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=6VZTBAGF8GIAX-shP0l&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=1b1cde6a7aee1e2d155cbde473c7ab58&amp;oe=60066715" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CFPkbk-AYdp/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/119800700_629606427557508_4655570553991197305_n.jpg?_nc_cat=104&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=lpmTRIfq1O8AX8o6-WL&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=e903894feeee737ed06c233307b80253&amp;oe=60075C41" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CFNhwyZgh9C/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/119505457_334343611102572_2763477702897369816_n.jpg?_nc_cat=109&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=AL3-IMqRegwAX_Uj-9b&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=a1c0d9f9c8c76c520f9184ebd46234df&amp;oe=600951A5" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CFKQEXSA2pw/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/119239440_3291425500947115_7410393695594667056_n.jpg?_nc_cat=106&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=B_oEG0gG3H4AX_z1GE2&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=c3156e491eb1a8e6e8a0c96788c41224&amp;oe=60070848" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CFHwjDBgq6v/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/119233245_179916736920737_2668150811324393463_n.jpg?_nc_cat=102&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=-LFCyoRapR4AX-V8Ugg&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=e08fe25e7555bad5e9e99eaa127950d6&amp;oe=600968A8" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CFAdUybgCTo/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/119049152_762666847858531_4874163405881806861_n.jpg?_nc_cat=104&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=58n_avQjwfUAX8wkyIW&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=d7879fc79150971de64e69f97cb7d1b7&amp;oe=60075231" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CEKPXWwg3Ll/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/118056645_2047100288755850_6859000385266403231_n.jpg?_nc_cat=111&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=nsgYqxsfk-QAX_rXQ6c&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=9eaee3f3fe01d5997221e0e32a610894&amp;oe=6009678C" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CEHiignAq7w/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/117196959_3196080393821327_3563522325572519712_n.jpg?_nc_cat=108&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=e2EE14hiHNIAX8B2yyq&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=7d25ec0a615ed27c0bf0c049a2196585&amp;oe=60067EFC" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CEEs0DGg7BT/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/117726975_197034975096734_1507492002174357176_n.jpg?_nc_cat=107&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=14FvEL99qWcAX_1QaPs&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=f01e1dad041c0dfb2f4606a0de7a6548&amp;oe=60061F99" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CECYckJAZw6/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/117667013_724506241429928_1191421236215135273_n.jpg?_nc_cat=107&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=NwQMA15nBUIAX-mK4na&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=f5802171c1008cf498d0f5a07f45a5cb&amp;oe=6007666C" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CD_69Ysg1_2/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/117815521_198301918313404_8100762658128409139_n.jpg?_nc_cat=108&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=f9vdc_uC_IIAX-CnEDN&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=ed25259947b2ae1f168f4b22a0a40070&amp;oe=60085889" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CDeZ86rA8qN/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/116913398_665475184066961_1548521755011998811_n.jpg?_nc_cat=101&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=-6q0T8OCWtcAX8x32i6&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=33e12431fcdd71e9661842ca5260495c&amp;oe=6006F09C" /></a
+              ><a
+                target="_blank"
+                href="https://www.instagram.com/p/CCGwzKbggzp/"
+                ><img
+                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/81827833_272965590466801_8912957459345304319_n.jpg?_nc_cat=111&amp;ccb=2&amp;_nc_sid=8ae9d6&amp;_nc_ohc=IgJcm6eOLm0AX9z70WH&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;oh=f5a2a5834d01a18ada555ceeab7f663c&amp;oe=6005DEB2"
+              /></a>
+            </div>
             <div id="fullSize"></div>
           </div>
         </article>
@@ -200,8 +304,6 @@
     <footer id="footer">
       <span class="footer-text">2020 &copy; Aleksander Atamańczuk</span>
     </footer>
-    <script type="text/javascript" src="js/loading.js"></script>
     <script type="text/javascript" src="js/scroll_back.js"></script>
-    <script type="text/javascript" src="js/instagram_feed.js"></script>
   </body>
 </html>
