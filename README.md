@@ -22,3 +22,6 @@ Projekt został podzielony na pliki osobno dla HTML, CSS oraz JavaScript.
 - W pliku scroll_back.js znajduje się kod obsługujący przycisk przewijania do początku strony
 - W pliku style.css znajdują się główne style użyte na stronie
 - W pliku index.html znajduje się główny kod strony
+
+## Wygląd strony
+![desktop](./DEMO/"Screenshot_2020-12-30 CodersCamp Projekt 1 - Aleksander Aamanczuk portfolio(2).jpg")
