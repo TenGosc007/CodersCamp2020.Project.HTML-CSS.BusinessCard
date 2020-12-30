@@ -24,9 +24,5 @@ Projekt został podzielony na pliki osobno dla HTML, CSS oraz JavaScript.
 - W pliku index.html znajduje się główny kod strony
 
 ## Wygląd strony
-<<<<<<< HEAD
-
 ![desktop](DEMO/desktop.jpg)
-=======
-![desktop](./DEMO/"Screenshot_2020-12-30 CodersCamp Projekt 1 - Aleksander Aamanczuk portfolio(2).jpg")
->>>>>>> 67c6f8fd8d2cb6821362f57223374ea0f920178f
+![mobile](DEMO/mobile.jpg)
